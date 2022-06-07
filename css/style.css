@@ -1,0 +1,579 @@
+/*==== 01. Default css ====*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+.section-padding {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.container-full {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.container {
+  width: 1100px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.container::before,
+.container::after,
+.container-full::before,
+.container-full::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.col-50 {
+  width: 50%;
+  float: left;
+  padding: 0 15px;
+}
+.col-70 {
+  width: 70%;
+  float: left;
+  padding: 0 15px;
+}
+.col-100 {
+  width: 100%;
+  float: left;
+  padding: 0 15px;
+}
+.col-33 {
+  width: 33.33%;
+  float: left;
+  padding: 0 15px;
+}
+.col-30 {
+  width: 30%;
+  float: left;
+  padding: 0 15px;
+}
+.col-25 {
+  width: 25%;
+  float: left;
+  padding: 0 15px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: inline-block;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital@1&family=Roboto&display=swap");
+
+/*
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+/*---- Site Css ----*/
+
+/*---- 01. Header Css ----*/
+header {
+  padding: 12px 0;
+}
+.main-menu {
+  list-style: none;
+  float: right;
+  padding: 18px 0;
+}
+.main-menu li {
+  display: inline-block;
+}
+.main-menu li a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #808080;
+  margin: 0 0 0 20px;
+  transition: 0.3s;
+}
+.main-menu li a:hover {
+  color: #ff5421;
+}
+.main-menu li a i {
+  transition: 0.3s;
+}
+.main-menu li a:hover i {
+  transform: rotate(180deg);
+}
+/*--==== 02. Home Css ====--*/
+.home {
+  background: url(../img/home/01.jpg);
+  padding: 160px 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
+.home::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgb(61, 61, 65);
+  left: 0;
+  top: 0;
+  opacity: 0.6;
+  z-index: -1;
+}
+.home h6 {
+  font-size: 17px;
+  color: #ff5421;
+  font-weight: 400;
+  letter-spacing: 4px;
+}
+.home h1 {
+  font-size: 70px;
+  line-height: 77px;
+  padding: 20px 0;
+}
+.home p {
+  font-size: 18px;
+  line-height: 29px;
+  padding: 10px 0;
+  padding-bottom: 50px;
+}
+.btn {
+  background: #ff5421;
+  font-size: 14px;
+  text-decoration: none;
+  letter-spacing: 1px;
+  color: #fff;
+  padding: 18px 35px;
+  display: inline-block;
+  border-radius: 5px;
+  transition: 0.3s;
+  font-weight: bold;
+}
+.btn:hover {
+  background: #e04314;
+}
+
+/*--==== 03. cetagory css ====--*/
+
+.cetagory {
+  background: #ff5421;
+  padding: 80px 0;
+  color: #fff;
+}
+.cetagory-box {
+  display: flex;
+}
+.ctg-icon i {
+  color: #ff5421;
+  background: #fff;
+  height: 70px;
+  width: 70px;
+  text-align: center;
+  line-height: 70px;
+  border-radius: 50%;
+  font-size: 30px;
+}
+.ctg-details {
+  padding-left: 20px;
+}
+.ctg-details h6 {
+  font-size: 24px;
+}
+.ctg-details p {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+/*--==== 04. about css ====--*/
+
+.about-left span {
+  color: #ff5421;
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.about-left h2 {
+  text-transform: capitalize;
+  color: #132643;
+  font-size: 41px;
+  line-height: 58px;
+  padding: 20px 0 30px 0;
+}
+.about p {
+  font-size: 16px;
+  color: #61686e;
+  line-height: 30px;
+}
+
+/*--==== 05. programs css ====--*/
+
+.programs {
+  background: #f4f4f4;
+}
+.img {
+  width: 100%;
+  height: auto;
+}
+.section-title {
+  text-align: center;
+}
+.section-title span {
+  color: #ff5421;
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.section-item-box {
+  background: #fff;
+}
+
+.section-title h2 {
+  color: #132643;
+  font-size: 44px;
+  text-transform: capitalize;
+  padding: 20px 0 50px 0;
+}
+.item-img {
+  width: 100%;
+  height: 230px;
+}
+.section-item-content {
+  padding: 20px;
+}
+
+.section-item-content h3 a {
+  color: #132643;
+  text-decoration: none;
+  font-size: 21px;
+  padding-bottom: 25px;
+  text-transform: capitalize;
+  display: inline-block;
+  transition: 0.3s;
+}
+.section-item-content h3 a:hover {
+  color: #ff5421;
+}
+.section-item-content p {
+  font-size: 16px;
+  color: #61686e;
+  padding-bottom: 20px;
+  line-height: 24px;
+}
+.section-item-btn {
+  font-size: 14px;
+  color: #ff5421;
+  text-decoration: none;
+  line-height: 14px;
+  letter-spacing: 1px;
+}
+
+/*--==== 06. courses css ====--*/
+.courses {
+  background: #fff;
+}
+.courses .section-item-box {
+  background: #f6f6f6;
+  margin-bottom: 20px;
+}
+
+.free {
+  background: #ff5421;
+  text-transform: capitalize;
+  font-size: 12px;
+  padding: 2px 5px 1px 5px;
+  color: #fff;
+  display: inline-block;
+  border-radius: 4px;
+}
+.ratings {
+  margin: 10px 0 20px 0;
+  font-size: 14px;
+  color: #aaa7a7;
+}
+
+/*--==== 07. counter css ====--*/
+.counter {
+  background: #ff5421;
+  padding: 80px 0;
+  background-color: #ff5421;
+  background: url("../img/counter.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 1;
+}
+.counter::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background: #fe5421;
+  z-index: -1;
+  opacity: 0.9;
+}
+.counter-box h2 {
+  color: #ffffff;
+  font-size: 44px;
+  line-height: 52px;
+  text-align: center;
+}
+.counter-box span {
+  color: #ffffff;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+/*--==== 08. students css ====--*/
+.test-box {
+  background: #f4f4f4;
+  padding: 20px;
+}
+.test-box i {
+  font-size: 40px;
+  color: #e3dedc;
+}
+.test-box p {
+  color: #61686e;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 15px 0;
+}
+.test-footer {
+  display: flex;
+  border-top: 1px solid #e3dedc;
+  padding: 30px 0;
+  position: relative;
+}
+.test-footer::before {
+  content: "\f0dd";
+  position: absolute;
+  top: -13px;
+  left: 20px;
+  font-size: 20px;
+  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: #e3dedc;
+}
+.test-footer img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.test-footer h6 {
+  font-size: 20px;
+  line-height: 22px;
+  color: #132643;
+  padding-bottom: 5px;
+}
+.test-footer span {
+  font-size: 14px;
+  line-height: 21px;
+  color: #61686e;
+}
+.text-author {
+  padding: 15px 10px 0 15px;
+}
+/*--==== 09. events css ====--*/
+.date-location {
+  display: inline-block;
+  padding: 15px 0px 15px 0;
+  font-size: 14px;
+  line-height: 21px;
+}
+.date-location span {
+  padding-right: 15px;
+}
+.date-location i {
+  color: #ff5421;
+  padding: 0 10px 0 0;
+}
+.date-location:hover {
+  color: #132643;
+}
+
+/*--==== 10. video css ====--*/
+
+.video {
+  background: url("../img/home/01.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: #fff;
+  padding: 110px 0;
+  position: relative;
+  z-index: 1;
+}
+.video::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #03132d;
+  opacity: 0.8;
+  z-index: -1;
+}
+.video h6 {
+  color: #fff;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+.video h3 {
+  font-size: 48px;
+  color: #fff;
+  text-transform: capitalize;
+  padding: 20px 0 60px 0;
+}
+.video i {
+  width: 100px;
+  height: 100px;
+  font-size: 35px;
+  color: #fff;
+  background: #ff5421;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 100px;
+  cursor: pointer;
+}
+/*--==== 11. choose css ====--*/
+.choose {
+  background: #f4f4f4;
+}
+.choose-left {
+  width: 100%;
+  height: 80px;
+}
+.choose-right {
+  padding-left: 20px;
+  padding-top: 30px;
+}
+.choose-right h2 {
+  font-size: 44px;
+  color: #132643;
+  line-height: 44px;
+  padding-bottom: 30px;
+}
+.choose-list {
+  display: flex;
+  margin-bottom: 50px;
+}
+.choose-list-left {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  background: #ff5421;
+  text-align: center;
+  line-height: 70px;
+  color: #fff;
+  font-size: 30px;
+  margin-right: 20px;
+}
+.choose-list-right h3 {
+  font-size: 24px;
+  color: #132643;
+  padding-bottom: 10px;
+}
+.choose-list-right p {
+  color: #61686e;
+  font-size: 16px;
+  line-height: 24px;
+}
+/*--==== 12. Teachers css ====--*/
+.section-item-content h3 {
+  margin-bottom: -6px;
+}
+.date-location i {
+  color: #a8a8a8;
+}
+.section-item-btn {
+  font-size: 14px;
+  color: #ff5421;
+  line-height: 21px;
+  letter-spacing: 1px;
+}
+/*--==== 13. finish css ====--*/
+.finish h3 {
+  font-size: 20px;
+  line-height: 26px;
+  color: #fff;
+}
+
+.Finish {
+  background: #000000;
+  color: #fff;
+  padding: 70px 0px 30px 0px;
+}
+.finish-1st h3 {
+  font-size: 20px;
+  line-height: 26px;
+  color: #fff;
+  padding-bottom: 20px;
+}
+.finish-1st p {
+  font-size: 15px;
+  line-height: 22px;
+  color: #e1e1e1;
+}
+.down span {
+  font-size: 15px;
+  line-height: 22px;
+  color: #e1e1e1;
+  padding-bottom: 30px;
+}
+.finish-2nd h3 {
+  padding-bottom: 25px;
+}
+.finish-2nd a h6 {
+  color: #e1e1e1;
+  font-size: 15px;
+  line-height: 22px;
+  padding-bottom: 5px;
+  transition: 0.3s;
+}
+.finish-2nd i {
+  padding-bottom: 5px;
+  padding-right: 5px;
+}
+.finish-2nd a h6:hover {
+  color: #ff5421;
+}
+.finish-4th h3 {
+  padding-bottom: 20px;
+}
+.finish-4th img {
+  width: 300px;
+  height: 160px;
+}
+.finish-4th i {
+  padding-top: 85px;
+  padding-right: 15px;
+  transition: 0.3s;
+  color: #fff;
+}
+.finish-4th i:hover {
+  color: #ff5421;
+}
+.last {
+  text-align: center;
+}
